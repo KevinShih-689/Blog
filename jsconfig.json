@@ -8,6 +8,7 @@
         "@services/*": ["services/*"],
         "@utils/*": ["utils/*"],
         "@apis/*": ["apis/*"],
+        "@layouts/*": ["layouts/*"]
     }
   },
 }

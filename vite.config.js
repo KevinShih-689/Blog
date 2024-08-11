@@ -9,7 +9,8 @@ export default defineConfig({
       "@pages": "/src/pages",
       "@assets": "/src/assets",
       "@utils": "/src/utils",
-      "@apis": "/src/apis"
+      "@apis": "/src/apis",
+      "@layouts": "/src/layouts",
     }
   },
 })

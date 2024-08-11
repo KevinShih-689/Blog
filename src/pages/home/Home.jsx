@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom"
+import ExpandLink from "@components/ExpandLink/ExpandLink"
 
 const Home = () => {
     return (
         <>
-            {/* <Link to={}>Posts</Link> */}
-            <button>Streaming</button>
-            <button>Dashboard</button>
+            <ExpandLink to={"/posts"}>Posts</ExpandLink>
+            <ExpandLink to={"/streaming"}>Streaming</ExpandLink>
+            <ExpandLink to={"/dashboard"}>Dashboard</ExpandLink>
         </>
     )
 }

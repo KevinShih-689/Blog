@@ -7,6 +7,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query'
+import MainLayouts from '@layouts/MainLayouts.jsx'
 import App from './App.jsx'
 import Posts from '@pages/posts/Posts.jsx'
 
@@ -17,11 +18,17 @@ const queryClient = new QueryClient()
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
-  },
-  {
-    path: "posts",
-    element: <Posts />,
+    element: <MainLayouts />,
+    children: [
+      {
+        index: true,
+        element: <App />,
+      },
+      {
+        path: "posts",
+        element: <Posts />,
+      }  
+    ]
   },
 ]);
 
