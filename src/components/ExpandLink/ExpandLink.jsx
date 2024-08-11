@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { Link as RouterLink } from 'react-router-dom';
 
-// 定义样式
 const StyledLink = styled(RouterLink)`
   color: ${(props) => props.color || '#adc5cf'};
   text-decoration: ${(props) => (props.underline ? 'underline' : 'none')};
