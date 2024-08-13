@@ -9,7 +9,7 @@ import {
 } from '@tanstack/react-query'
 import MainLayouts from '@layouts/MainLayouts.jsx'
 import App from './App.jsx'
-import Posts from '@pages/posts/Posts.jsx'
+import StreamingVideo from '@pages/video/Video.jsx'
 
 import './index.css'
 
@@ -25,8 +25,8 @@ const router = createBrowserRouter([
         element: <App />,
       },
       {
-        path: "posts",
-        element: <Posts />,
+        path: "streaming",
+        element: <StreamingVideo />,
       }  
     ]
   },

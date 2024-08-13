@@ -1,3 +1,49 @@
 .main-layout {
-    height: 100%;
+    min-height: 100vh;
+    & > .header {
+        min-height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4% 6%;
+        gap: 25px;
+        /* 邊際要更少 */
+        .home-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    & > .content {
+        min-height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* 邊際要更少 */
+    }
+
+    /* 電腦寬度覆寫樣式 */
+    @media (min-width: 768px) {
+        & > .header {
+            /* 邊際要更多 */
+            justify-content: flex-start;
+            padding: 2vw 4vw;
+            gap: 40px;
+            .bar {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 8px;
+            }
+            .icon {
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+
+        & > .content {
+            /* 邊際要更多 */
+        }
+    }
 }

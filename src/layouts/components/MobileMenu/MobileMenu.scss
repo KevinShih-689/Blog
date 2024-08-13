@@ -1,0 +1,8 @@
+.mobile-menu {
+    display: flex;
+    align-items: center;
+    & > .menu {
+        background-color: antiquewhite;
+        width: 100vw;
+    }
+}

@@ -8,10 +8,19 @@ const StyledLink = styled(RouterLink)`
   padding: ${(props) => props.padding || '8px 16px'};
   border-radius: ${(props) => props.borderRadius || '4px'};
   background-color: ${(props) => props.backgroundColor || 'transparent'};
-  
-  &:hover {
-    color: ${(props) => props.hoverColor || '#296073'};
-    background-color: ${(props) => props.hoverBackgroundColor || '#adc5cf'};
+
+  @media (min-width: 768px) {
+    &:hover {
+      color: ${(props) => props.hoverColor || '#296073'};
+      background-color: ${(props) => props.hoverBackgroundColor || '#adc5cf'};
+    }
+  }
+
+  @media (max-width: 767px) {
+    &:active {
+      color: ${(props) => props.activeColor || '#296073'};
+      background-color: ${(props) => props.activeBackgroundColor || '#adc5cf'};
+    }
   }
 `;
 
