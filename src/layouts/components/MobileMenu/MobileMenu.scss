@@ -1,8 +1,26 @@
+@import "/src/variables.module.scss";
+
 .mobile-menu {
     display: flex;
     align-items: center;
     & > .menu {
-        background-color: antiquewhite;
-        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background: $PRIMARY;
+        box-shadow: 5px 5px 12px #b6cfd966;
+        position: absolute;
+        width: 95vw;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -20px); /* 左右置中並向上偏移 */
+        opacity: 0;
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+        pointer-events: none;
+    }
+    & > .menu-show {
+        transform: translate(-50%, 0); /* 左右置中並且回到正常位置 */
+        opacity: 1;
+        pointer-events: auto;
     }
 }

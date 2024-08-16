@@ -24,6 +24,21 @@ const StyledLink = styled(RouterLink)`
   }
 `;
 
+/**
+ * The Link component base on RouterLink from react-router-dom
+ * @param to required
+ * @param color optional
+ * @param underline optional
+ * @param fontSize optional
+ * @param padding optional
+ * @param borderRadius optional
+ * @param backgroundColor optional
+ * @param hoverColor optional
+ * @param hoverBackgroundColor optional
+ * @param activeColor optional
+ * @param activeBackgroundColor optional
+ * @returns 
+ */
 const ExpandLink = ({ to, children, ...props }) => {
   return (
     <StyledLink to={to} {...props}>

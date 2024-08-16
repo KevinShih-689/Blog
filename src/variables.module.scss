@@ -1,0 +1,21 @@
+
+$PRIMARY: #adc5cf;
+$SECONDARY: #0074a9;
+
+$GRAY: (
+  _LIGHTEST: #f7f7f7,
+  _LIGHTER: #e1e1e1,
+  _LIGHT: #cfcfcf,
+  _NORMAL: #a8a8a8,
+  _GRAY_DARK: #707070,
+);
+
+:export {
+    PRIMARY: $PRIMARY;
+    SECONDARY: $SECONDARY;
+    GRAY_LIGHTEST: map-get($GRAY, _LIGHTEST);
+    GRAY_LIGHTER: map-get($GRAY, _LIGHTER);
+    GRAY: map-get($GRAY, _LIGHT);
+    GRAY_GRAY: map-get($GRAY, _NORMAL);
+    GRAY_DARK: map-get($GRAY, _GRAY_DARK);
+}
